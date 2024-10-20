@@ -20,6 +20,7 @@ class MyApp extends StatelessWidget {
         ),
         body: Container(
           color: Colors.amber,
+          padding: const EdgeInsets.all(25),
           child: const Text(
             "Osama Mohammad Abdalaziz",
             style: TextStyle(
