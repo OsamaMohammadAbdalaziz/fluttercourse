@@ -19,9 +19,11 @@ class MyApp extends StatelessWidget {
           backgroundColor: Colors.blue,
         ),
         body: Container(
-          decoration: const BoxDecoration(
-              color: Colors.amber,
-              borderRadius: BorderRadius.all(Radius.circular(50))),
+          decoration: BoxDecoration(
+            color: Colors.amber,
+            borderRadius: const BorderRadius.all(Radius.circular(50)),
+            border: Border.all(color: Colors.black),
+          ),
           width: 500,
           height: 400,
           alignment: Alignment.center,
