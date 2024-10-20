@@ -4,14 +4,20 @@ void main() {
   runApp(const MyApp());
 }
 
-
 class MyApp extends StatelessWidget {
   const MyApp({super.key});
 
   @override
   Widget build(BuildContext context) {
     return const MaterialApp(
-      home: Text("Osama Mohammad Abdalaziz"),
+      home: Text(
+        "Osama Mohammad Abdalaziz",
+        style: TextStyle(
+            color: Colors.indigo,
+            fontSize: 75,
+            fontWeight: FontWeight.w400,
+            backgroundColor: Colors.white),
+      ),
     );
   }
 }
