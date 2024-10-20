@@ -19,10 +19,10 @@ class MyApp extends StatelessWidget {
           backgroundColor: Colors.blue,
         ),
         body: Container(
+          decoration: const BoxDecoration(color: Colors.amber),
           width: 500,
           height: 400,
           alignment: Alignment.center,
-          color: Colors.amber,
           margin: const EdgeInsets.all(15),
           padding: const EdgeInsets.all(25),
           child: const Text(
