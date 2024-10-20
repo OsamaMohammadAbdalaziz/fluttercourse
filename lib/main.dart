@@ -18,13 +18,15 @@ class MyApp extends StatelessWidget {
           ),
           backgroundColor: Colors.blue,
         ),
-        body: const Text(
-          "Osama Mohammad Abdalaziz",
-          style: TextStyle(
-              color: Colors.indigo,
-              fontSize: 75,
-              fontWeight: FontWeight.w400,
-              backgroundColor: Colors.red),
+        body: Container(
+          child: const Text(
+            "Osama Mohammad Abdalaziz",
+            style: TextStyle(
+                color: Colors.indigo,
+                fontSize: 75,
+                fontWeight: FontWeight.w400,
+                backgroundColor: Colors.red),
+          ),
         ),
       ),
     );
