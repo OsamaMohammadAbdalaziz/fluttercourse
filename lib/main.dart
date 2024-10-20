@@ -19,6 +19,7 @@ class MyApp extends StatelessWidget {
           backgroundColor: Colors.blue,
         ),
         body: Container(
+          alignment: Alignment.topCenter,
           color: Colors.amber,
           margin: const EdgeInsets.all(15),
           padding: const EdgeInsets.all(25),
@@ -26,7 +27,7 @@ class MyApp extends StatelessWidget {
             "Osama Mohammad Abdalaziz",
             style: TextStyle(
                 color: Colors.indigo,
-                fontSize: 75,
+                fontSize: 30,
                 fontWeight: FontWeight.w400,
                 backgroundColor: Colors.red),
           ),
