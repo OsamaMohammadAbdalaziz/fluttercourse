@@ -20,13 +20,26 @@ class MyApp extends StatelessWidget {
         ),
         body: Container(
           decoration: BoxDecoration(
-            color: Colors.amber,
-            borderRadius: const BorderRadius.all(Radius.circular(50)),
-            border: Border.all(
-              color: Colors.black,
-              width: 10,
-            ),
-          ),
+              color: Colors.amber,
+              borderRadius: const BorderRadius.all(Radius.circular(50)),
+              border: Border.all(
+                color: Colors.black,
+                width: 10,
+              ),
+              boxShadow: const [
+                BoxShadow(
+                    color: Colors.deepOrangeAccent,
+                    offset: Offset(10, 10),
+                    spreadRadius: 5,
+                    blurRadius: 10,
+                    blurStyle: BlurStyle.normal),
+                BoxShadow(
+                    color: Colors.deepPurpleAccent,
+                    offset: Offset(-10, -10),
+                    spreadRadius: 5,
+                    blurRadius: 10,
+                    blurStyle: BlurStyle.solid),
+              ]),
           width: 500,
           height: 400,
           alignment: Alignment.center,
