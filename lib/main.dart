@@ -19,7 +19,9 @@ class MyApp extends StatelessWidget {
           backgroundColor: Colors.blue,
         ),
         body: Container(
-          alignment: Alignment.topCenter,
+          width: 500,
+          height: 400,
+          alignment: Alignment.center,
           color: Colors.amber,
           margin: const EdgeInsets.all(15),
           padding: const EdgeInsets.all(25),
