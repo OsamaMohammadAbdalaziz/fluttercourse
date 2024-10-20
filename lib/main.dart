@@ -19,6 +19,7 @@ class MyApp extends StatelessWidget {
           backgroundColor: Colors.blue,
         ),
         body: Container(
+          color: Colors.amber,
           child: const Text(
             "Osama Mohammad Abdalaziz",
             style: TextStyle(
