@@ -24,7 +24,7 @@ class MyApp extends StatelessWidget {
               color: Colors.indigo,
               fontSize: 75,
               fontWeight: FontWeight.w400,
-              backgroundColor: Colors.white),
+              backgroundColor: Colors.red),
         ),
       ),
     );
