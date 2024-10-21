@@ -19,6 +19,7 @@ class MyApp extends StatelessWidget {
           backgroundColor: Colors.blue,
         ),
         body: Column(
+          mainAxisAlignment: MainAxisAlignment.center,
           children: [
             const Text(
               "Osama Mohammad Abdalaziz",
