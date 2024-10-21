@@ -20,6 +20,7 @@ class MyApp extends StatelessWidget {
         ),
         body: Column(
           mainAxisAlignment: MainAxisAlignment.center,
+          crossAxisAlignment: CrossAxisAlignment.center,
           children: [
             const Text(
               "Osama Mohammad Abdalaziz",
