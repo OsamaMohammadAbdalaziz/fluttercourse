@@ -18,32 +18,36 @@ class MyApp extends StatelessWidget {
           ),
           backgroundColor: Colors.blue,
         ),
-        body: Column(
-          mainAxisAlignment: MainAxisAlignment.center,
+        body: Row(
+          mainAxisAlignment: MainAxisAlignment.end,
           crossAxisAlignment: CrossAxisAlignment.center,
           children: [
             const Text(
-              "Osama Mohammad Abdalaziz",
+              "Osama Mohammad",
               style: TextStyle(
-                fontSize: 20,
+                fontSize: 10,
                 color: Color.fromARGB(255, 255, 0, 85),
               ),
             ),
             Container(
-              width: 200,
-              height: 200,
+              width: 50,
+              height: 50,
               color: Colors.red,
             ),
-            Image.asset("asset/Images/England.jpg"),
-            Container(
+            Image.asset(
+              "asset/Images/England.jpg",
               width: 150,
               height: 150,
+            ),
+            Container(
+              width: 20,
+              height: 20,
               color: const Color.fromARGB(255, 1, 63, 113),
             ),
             const Text(
-              "Osama Mohammad Abdalaziz",
+              "Osama Mohammad",
               style: TextStyle(
-                fontSize: 15,
+                fontSize: 10,
                 color: Color.fromARGB(255, 123, 0, 255),
               ),
             ),
