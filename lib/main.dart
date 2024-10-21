@@ -18,8 +18,7 @@ class MyApp extends StatelessWidget {
           ),
           backgroundColor: Colors.blue,
         ),
-        body: Image.network(
-            "https://odysseymagazine.com/wp-content/uploads/2024/05/1_private-panoramic-dubai-city-night-view-tour.jpg"),
+        body: Image.asset("asset/Images/Dubai.JPG"),
       ),
     );
   }
