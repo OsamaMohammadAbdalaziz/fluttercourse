@@ -18,7 +18,13 @@ class MyApp extends StatelessWidget {
           ),
           backgroundColor: Colors.blue,
         ),
-        body: Image.asset("asset/Images/Dubai.JPG"),
+        body: Image.asset(
+          "asset/Images/Dubai.JPG",
+          alignment: Alignment.center,
+          fit: BoxFit.contain,
+          width: 450,
+          height: 450,
+        ),
       ),
     );
   }
