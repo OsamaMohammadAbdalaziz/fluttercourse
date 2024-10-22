@@ -19,7 +19,7 @@ class MyApp extends StatelessWidget {
             ),
             backgroundColor: Colors.blue,
           ),
-          body: Wrap(
+          body: Column(
             children: [
               Container(
                 height: 100,
