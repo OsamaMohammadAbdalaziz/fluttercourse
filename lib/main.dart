@@ -20,37 +20,156 @@ class MyApp extends StatelessWidget {
             backgroundColor: Colors.blue,
           ),
           body: Row(
-            mainAxisAlignment: MainAxisAlignment.end,
-            crossAxisAlignment: CrossAxisAlignment.center,
             children: [
-              const Text(
-                "Osama Mohammad",
-                style: TextStyle(
-                  fontSize: 10,
-                  color: Color.fromARGB(255, 255, 0, 85),
-                ),
-              ),
               Container(
-                width: 50,
-                height: 50,
+                height: 100,
+                width: 100,
                 color: Colors.red,
               ),
-              Image.asset(
-                "asset/Images/England.jpg",
-                width: 150,
-                height: 150,
+              Container(
+                height: 100,
+                width: 100,
+                color: Colors.green,
               ),
               Container(
-                width: 20,
-                height: 20,
-                color: const Color.fromARGB(255, 1, 63, 113),
+                height: 100,
+                width: 100,
+                color: Colors.blue,
               ),
-              const Text(
-                "Osama Mohammad",
-                style: TextStyle(
-                  fontSize: 10,
-                  color: Color.fromARGB(255, 123, 0, 255),
-                ),
+              Container(
+                height: 100,
+                width: 100,
+                color: Colors.yellow,
+              ),
+              Container(
+                height: 100,
+                width: 100,
+                color: Colors.black,
+              ),
+              Container(
+                height: 100,
+                width: 100,
+                color: Colors.red,
+              ),
+              Container(
+                height: 100,
+                width: 100,
+                color: Colors.green,
+              ),
+              Container(
+                height: 100,
+                width: 100,
+                color: Colors.blue,
+              ),
+              Container(
+                height: 100,
+                width: 100,
+                color: Colors.yellow,
+              ),
+              Container(
+                height: 100,
+                width: 100,
+                color: Colors.black,
+              ),
+              Container(
+                height: 100,
+                width: 100,
+                color: Colors.red,
+              ),
+              Container(
+                height: 100,
+                width: 100,
+                color: Colors.green,
+              ),
+              Container(
+                height: 100,
+                width: 100,
+                color: Colors.blue,
+              ),
+              Container(
+                height: 100,
+                width: 100,
+                color: Colors.yellow,
+              ),
+              Container(
+                height: 100,
+                width: 100,
+                color: Colors.black,
+              ),
+              Container(
+                height: 100,
+                width: 100,
+                color: Colors.red,
+              ),
+              Container(
+                height: 100,
+                width: 100,
+                color: Colors.green,
+              ),
+              Container(
+                height: 100,
+                width: 100,
+                color: Colors.blue,
+              ),
+              Container(
+                height: 100,
+                width: 100,
+                color: Colors.yellow,
+              ),
+              Container(
+                height: 100,
+                width: 100,
+                color: Colors.black,
+              ),
+              Container(
+                height: 100,
+                width: 100,
+                color: Colors.red,
+              ),
+              Container(
+                height: 100,
+                width: 100,
+                color: Colors.green,
+              ),
+              Container(
+                height: 100,
+                width: 100,
+                color: Colors.blue,
+              ),
+              Container(
+                height: 100,
+                width: 100,
+                color: Colors.yellow,
+              ),
+              Container(
+                height: 100,
+                width: 100,
+                color: Colors.black,
+              ),
+              Container(
+                height: 100,
+                width: 100,
+                color: Colors.red,
+              ),
+              Container(
+                height: 100,
+                width: 100,
+                color: Colors.green,
+              ),
+              Container(
+                height: 100,
+                width: 100,
+                color: Colors.blue,
+              ),
+              Container(
+                height: 100,
+                width: 100,
+                color: Colors.yellow,
+              ),
+              Container(
+                height: 100,
+                width: 100,
+                color: Colors.black,
               ),
             ],
           ),
