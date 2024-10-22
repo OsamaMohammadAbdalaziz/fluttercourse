@@ -20,7 +20,8 @@ class MyApp extends StatelessWidget {
             backgroundColor: Colors.blue,
           ),
           body: SingleChildScrollView(
-            child: Column(
+            scrollDirection: Axis.horizontal,
+            child: Wrap(
               children: [
                 Container(
                   height: 100,
