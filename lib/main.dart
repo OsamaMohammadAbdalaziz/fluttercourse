@@ -19,187 +19,25 @@ class MyApp extends StatelessWidget {
             ),
             backgroundColor: Colors.blue,
           ),
-          body: SingleChildScrollView(
-            scrollDirection: Axis.horizontal,
-            child: Wrap(
-              children: [
-                Container(
-                  height: 100,
-                  width: 100,
-                  color: Colors.red,
-                ),
-                Container(
-                  height: 100,
-                  width: 100,
-                  color: Colors.green,
-                ),
-                Container(
-                  height: 100,
-                  width: 100,
-                  color: Colors.blue,
-                ),
-                Container(
-                  height: 100,
-                  width: 100,
-                  color: Colors.yellow,
-                ),
-                Container(
-                  height: 100,
-                  width: 100,
-                  color: Colors.black,
-                ),
-                Container(
-                  height: 100,
-                  width: 100,
-                  color: Colors.red,
-                ),
-                Container(
-                  height: 100,
-                  width: 100,
-                  color: Colors.green,
-                ),
-                Container(
-                  height: 100,
-                  width: 100,
-                  color: Colors.blue,
-                ),
-                Container(
-                  height: 100,
-                  width: 100,
-                  color: Colors.yellow,
-                ),
-                Container(
-                  height: 100,
-                  width: 100,
-                  color: Colors.black,
-                ),
-                Container(
-                  height: 100,
-                  width: 100,
-                  color: Colors.red,
-                ),
-                Container(
-                  height: 100,
-                  width: 100,
-                  color: Colors.green,
-                ),
-                Container(
-                  height: 100,
-                  width: 100,
-                  color: Colors.blue,
-                ),
-                Container(
-                  height: 100,
-                  width: 100,
-                  color: Colors.yellow,
-                ),
-                Container(
-                  height: 100,
-                  width: 100,
-                  color: Colors.black,
-                ),
-                Container(
-                  height: 100,
-                  width: 100,
-                  color: Colors.red,
-                ),
-                Container(
-                  height: 100,
-                  width: 100,
-                  color: Colors.green,
-                ),
-                Container(
-                  height: 100,
-                  width: 100,
-                  color: Colors.blue,
-                ),
-                Container(
-                  height: 100,
-                  width: 100,
-                  color: Colors.yellow,
-                ),
-                Container(
-                  height: 100,
-                  width: 100,
-                  color: Colors.black,
-                ),
-                Container(
-                  height: 100,
-                  width: 100,
-                  color: Colors.red,
-                ),
-                Container(
-                  height: 100,
-                  width: 100,
-                  color: Colors.green,
-                ),
-                Container(
-                  height: 100,
-                  width: 100,
-                  color: Colors.blue,
-                ),
-                Container(
-                  height: 100,
-                  width: 100,
-                  color: Colors.yellow,
-                ),
-                Container(
-                  height: 100,
-                  width: 100,
-                  color: Colors.black,
-                ),
-                Container(
-                  height: 100,
-                  width: 100,
-                  color: Colors.red,
-                ),
-                Container(
-                  height: 100,
-                  width: 100,
-                  color: Colors.green,
-                ),
-                Container(
-                  height: 100,
-                  width: 100,
-                  color: Colors.blue,
-                ),
-                Container(
-                  height: 100,
-                  width: 100,
-                  color: Colors.yellow,
-                ),
-                Container(
-                  height: 100,
-                  width: 100,
-                  color: Colors.black,
-                ),
-                Container(
-                  height: 100,
-                  width: 100,
-                  color: Colors.red,
-                ),
-                Container(
-                  height: 100,
-                  width: 100,
-                  color: Colors.green,
-                ),
-                Container(
-                  height: 100,
-                  width: 100,
-                  color: Colors.blue,
-                ),
-                Container(
-                  height: 100,
-                  width: 100,
-                  color: Colors.yellow,
-                ),
-                Container(
-                  height: 100,
-                  width: 100,
-                  color: Colors.black,
-                ),
-              ],
-            ),
+          body: ListView(
+            children: [
+              Text("Osama Mohammad Abdalaziz"),
+              Container(width: 100,height: 100,color: Colors.black,),
+              Text("Osama Mohammad Abdalaziz"),
+              Container(width: 100,height: 100,color: Colors.blue,),
+              Text("Osama Mohammad Abdalaziz"),
+              Container(width: 100,height: 100,color: Colors.red,),
+              Text("Osama Mohammad Abdalaziz"),
+              Container(width: 100,height: 100,color: Colors.yellow,),
+              Text("Osama Mohammad Abdalaziz"),
+              Container(width: 100,height: 100,color: Colors.green,),
+              Text("Osama Mohammad Abdalaziz"),
+              Container(width: 100,height: 100,color: Colors.pink,),
+              Text("Osama Mohammad Abdalaziz"),
+              Container(width: 100,height: 100,color: Colors.grey,),
+              Text("Osama Mohammad Abdalaziz"),
+              Container(width: 100,height: 100,color: Colors.purple,),
+            ],
           ),
         ),
       ),
