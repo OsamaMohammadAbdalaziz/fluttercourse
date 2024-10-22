@@ -22,7 +22,7 @@ class MyApp extends StatelessWidget {
           body: Container(
             width: 400,
             child: ListView(
-              scrollDirection: Axis.horizontal,
+              scrollDirection: Axis.vertical,
               children: [
                 const Text("Osama Mohammad Abdalaziz"),
                 Container(width: 100,height: 100,color: Colors.black,),
