@@ -86,29 +86,35 @@ class MyApp extends StatelessWidget {
             ),
             backgroundColor: Colors.blue,
           ),
-          body: Container(
-            child: ListView.separated(
-              physics: NeverScrollableScrollPhysics(),
-              separatorBuilder: (context, i) {
-                return const Divider(
-                  color: Colors.black,
-                  height: 30,
-                  thickness: 5,
-                );
-              },
-              itemCount: empolyee.length,
-              itemBuilder: (context, i) {
-                return Container(
-                  height: 100,
-                  color: i.isOdd ? Colors.redAccent : Colors.blueAccent,
-                  child: Text(
-                    '${empolyee[i]}',
-                    textAlign: TextAlign.center,
-                    style: const TextStyle(fontSize: 20, color: Colors.white),
-                  ),
-                );
-              },
-            ),
+          body: ListView(
+            children: [
+              Container(
+                child: ListView.separated(
+                  shrinkWrap: true,
+                  physics: NeverScrollableScrollPhysics(),
+                  separatorBuilder: (context, i) {
+                    return const Divider(
+                      color: Colors.black,
+                      height: 30,
+                      thickness: 5,
+                    );
+                  },
+                  itemCount: empolyee.length,
+                  itemBuilder: (context, i) {
+                    return Container(
+                      height: 100,
+                      color: i.isOdd ? Colors.redAccent : Colors.blueAccent,
+                      child: Text(
+                        '${empolyee[i]}',
+                        textAlign: TextAlign.center,
+                        style:
+                            const TextStyle(fontSize: 20, color: Colors.white),
+                      ),
+                    );
+                  },
+                ),
+              ),
+            ],
           ),
         ),
       ),
