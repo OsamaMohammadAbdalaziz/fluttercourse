@@ -92,7 +92,7 @@ class MyApp extends StatelessWidget {
               itemBuilder: (context, i) {
                 return Container(
                   height: 100,
-                  color: const Color.fromARGB(255, 0, 13, 255),
+                  color: i.isOdd ? Colors.redAccent : Colors.blueAccent,
                   child: Text(
                     '${empolyee[i]}',
                     textAlign: TextAlign.center,
