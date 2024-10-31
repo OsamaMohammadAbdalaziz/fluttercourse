@@ -93,7 +93,7 @@ class MyApp extends StatelessWidget {
               ),
               ListView.separated(
                 shrinkWrap: true,
-                physics: NeverScrollableScrollPhysics(),
+                physics: const NeverScrollableScrollPhysics(),
                 separatorBuilder: (context, i) {
                   return const Divider(
                     color: Colors.black,
@@ -107,7 +107,7 @@ class MyApp extends StatelessWidget {
                     height: 100,
                     color: i.isOdd ? Colors.redAccent : Colors.blueAccent,
                     child: Text(
-                      '${empolyee[i]}',
+                      '${empolyee[i]['First name']} ${empolyee[i]['Middel name']} ${empolyee[i]['Last name']} ${empolyee[i]['Age']} ${empolyee[i]['Country']}',
                       textAlign: TextAlign.center,
                       style: const TextStyle(fontSize: 20, color: Colors.white),
                     ),
