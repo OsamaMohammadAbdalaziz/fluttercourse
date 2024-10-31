@@ -92,6 +92,7 @@ class MyApp extends StatelessWidget {
                 return Divider(
                   color: Colors.black,
                   height: 30,
+                  thickness: 5,
                 );
               },
               itemCount: empolyee.length,
