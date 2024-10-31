@@ -88,6 +88,7 @@ class MyApp extends StatelessWidget {
           ),
           body: Container(
             child: ListView.separated(
+              physics: NeverScrollableScrollPhysics(),
               separatorBuilder: (context, i) {
                 return const Divider(
                   color: Colors.black,
