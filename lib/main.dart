@@ -87,7 +87,6 @@ class MyApp extends StatelessWidget {
             backgroundColor: Colors.blue,
           ),
           body: Container(
-            width: 400,
             child: ListView.builder(
               itemCount: empolyee.length,
               itemBuilder: (context, i) {
@@ -95,7 +94,7 @@ class MyApp extends StatelessWidget {
                   height: 100,
                   color: const Color.fromARGB(255, 0, 13, 255),
                   child: Text(
-                    "$i",
+                    '${empolyee[i]}',
                     textAlign: TextAlign.center,
                     style: const TextStyle(fontSize: 20, color: Colors.white),
                   ),
