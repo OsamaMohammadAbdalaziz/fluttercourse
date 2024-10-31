@@ -92,6 +92,7 @@ class MyApp extends StatelessWidget {
               itemCount: empolyee.length,
               itemBuilder: (context, i) {
                 return Container(
+                  height: 100,
                   color: const Color.fromARGB(255, 0, 13, 255),
                   child: Text(
                     '${empolyee[i]}',
