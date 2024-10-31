@@ -92,7 +92,7 @@ class MyApp extends StatelessWidget {
               itemCount: empolyee.length,
               itemBuilder: (context, i) {
                 return Container(
-                  child: Text('${empolyee[i]}'),
+                  child: Text('${empolyee[i]}',style: const TextStyle(fontSize: 20),),
                 );
               },
             ),
