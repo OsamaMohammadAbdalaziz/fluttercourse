@@ -89,10 +89,7 @@ class MyApp extends StatelessWidget {
           body: Container(
             child: ListView.separated(
               separatorBuilder: (context, i) {
-                return Container(
-                  height: 100,
-                  color: Colors.black,
-                );
+                return Divider();
               },
               itemCount: empolyee.length,
               itemBuilder: (context, i) {
