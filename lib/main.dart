@@ -95,7 +95,7 @@ class MyApp extends StatelessWidget {
                   height: 100,
                   color: const Color.fromARGB(255, 0, 13, 255),
                   child: Text(
-                    '${empolyee[i]}',
+                    "$i",
                     textAlign: TextAlign.center,
                     style: const TextStyle(fontSize: 20, color: Colors.white),
                   ),
