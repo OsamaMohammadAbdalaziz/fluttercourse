@@ -87,7 +87,13 @@ class MyApp extends StatelessWidget {
             backgroundColor: Colors.blue,
           ),
           body: Container(
-            child: ListView.builder(
+            child: ListView.separated(
+              separatorBuilder: (context, i) {
+                return Container(
+                  height: 100,
+                  color: Colors.black,
+                );
+              },
               itemCount: empolyee.length,
               itemBuilder: (context, i) {
                 return Container(
