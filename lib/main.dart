@@ -88,7 +88,7 @@ class MyApp extends StatelessWidget {
           body: ListView(
             children: [
               const Text(
-                "Computer Engineering",
+                "Employees in computer Engineering department:",
                 style: TextStyle(fontSize: 30),
               ),
               ListView.separated(
