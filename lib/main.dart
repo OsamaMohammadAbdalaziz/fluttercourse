@@ -93,7 +93,7 @@ class MyApp extends StatelessWidget {
             backgroundColor: Colors.blue,
           ),
           body: GridView.builder(
-            gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(crossAxisCount: 2),
+            gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(crossAxisCount: 2, mainAxisSpacing: 10.0),
             itemCount: empolyee.length,
             itemBuilder: (context, i) {
               return Container(
