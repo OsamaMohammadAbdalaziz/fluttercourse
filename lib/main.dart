@@ -97,7 +97,8 @@ class MyApp extends StatelessWidget {
               crossAxisCount: 2,
               mainAxisSpacing: 10.0,
               childAspectRatio: 2.5,
-              crossAxisSpacing: 10.5
+              crossAxisSpacing: 10.5,
+              mainAxisExtent: 200,
             ),
             itemCount: empolyee.length,
             itemBuilder: (context, i) {
