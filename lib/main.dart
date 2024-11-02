@@ -41,7 +41,7 @@ class MyApp extends StatelessWidget {
       "Middel name": "Mohammad",
       "Last name": "Mahmoud",
       "Age": 21,
-      "Country": "Palastine",
+      "Country": "Palestine",
     },
     {
       "First name": "Taha",
@@ -55,7 +55,7 @@ class MyApp extends StatelessWidget {
       "Middel name": "Mohammad",
       "Last name": "Mahmoud",
       "Age": 21,
-      "Country": "Palastine",
+      "Country": "Palestine",
     },
     {
       "First name": "حمزة",
@@ -70,6 +70,13 @@ class MyApp extends StatelessWidget {
       "Last name": "Ayach",
       "Age": 21,
       "Country": "Lebnan",
+    },
+    {
+      "First name": "Mohammad",
+      "Middel name": "Jamal",
+      "Last name": "Alnims",
+      "Age": 24,
+      "Country": "Palestine",
     },
   ];
 
