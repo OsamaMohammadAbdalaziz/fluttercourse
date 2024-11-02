@@ -103,43 +103,73 @@ class MyApp extends StatelessWidget {
             children: const [
               Text(
                 "ELmahdi",
-                style: TextStyle(fontSize: 15, color: Colors.blue),
+                style: TextStyle(
+                    fontSize: 15,
+                    color: Colors.blue,
+                    fontWeight: FontWeight.bold),
               ),
               Text(
                 "ELmahdi",
-                style: TextStyle(fontSize: 15, color: Colors.red),
+                style: TextStyle(
+                    fontSize: 15,
+                    color: Colors.red,
+                    fontWeight: FontWeight.bold),
               ),
               Text(
                 "ELmahdi",
-                style: TextStyle(fontSize: 15, color: Colors.pink),
+                style: TextStyle(
+                    fontSize: 15,
+                    color: Colors.pink,
+                    fontWeight: FontWeight.bold),
               ),
               Text(
                 "ELmahdi",
-                style: TextStyle(fontSize: 15, color: Colors.green),
+                style: TextStyle(
+                    fontSize: 15,
+                    color: Colors.green,
+                    fontWeight: FontWeight.bold),
               ),
               Text(
                 "ELmahdi",
-                style: TextStyle(fontSize: 15, color: Colors.orange),
+                style: TextStyle(
+                    fontSize: 15,
+                    color: Colors.orange,
+                    fontWeight: FontWeight.bold),
               ),
               Text(
                 "ELmahdi",
-                style: TextStyle(fontSize: 15, color: Colors.purple),
+                style: TextStyle(
+                    fontSize: 15,
+                    color: Colors.purple,
+                    fontWeight: FontWeight.bold),
               ),
               Text(
                 "ELmahdi",
-                style: TextStyle(fontSize: 15, color: Colors.grey),
+                style: TextStyle(
+                    fontSize: 15,
+                    color: Colors.grey,
+                    fontWeight: FontWeight.bold),
               ),
               Text(
                 "ELmahdi",
-                style: TextStyle(fontSize: 15, color: Colors.black),
+                style: TextStyle(
+                    fontSize: 15,
+                    color: Colors.black,
+                    fontWeight: FontWeight.bold),
               ),
               Text(
                 "ELmahdi",
-                style: TextStyle(fontSize: 15, color: Colors.yellow),
+                style: TextStyle(
+                    fontSize: 15,
+                    color: Colors.yellow,
+                    fontWeight: FontWeight.bold),
               ),
               Text(
                 "ELmahdi",
-                style: TextStyle(fontSize: 15, color: Colors.indigo),
+                style: TextStyle(
+                    fontSize: 15,
+                    color: Colors.indigo,
+                    fontWeight: FontWeight.bold),
               ),
             ],
           ),
