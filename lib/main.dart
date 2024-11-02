@@ -85,36 +85,20 @@ class MyApp extends StatelessWidget {
             ),
             backgroundColor: Colors.blue,
           ),
-          body: ListView(
-            children: [
-              const Text(
-                "Employees in computer Engineering department:",
-                style: TextStyle(fontSize: 30),
-              ),
-              ListView.separated(
-                shrinkWrap: true,
-                physics: const NeverScrollableScrollPhysics(),
-                separatorBuilder: (context, i) {
-                  return const Divider(
-                    color: Colors.black,
-                    height: 30,
-                    thickness: 5,
-                  );
-                },
-                itemCount: empolyee.length,
-                itemBuilder: (context, i) {
-                  return Container(
-                    height: 100,
-                    color: i.isOdd ? Colors.redAccent : Colors.blueAccent,
-                    child: Text(
-                      '${empolyee[i]['First name']} ${empolyee[i]['Middel name']} ${empolyee[i]['Last name']} ${empolyee[i]['Age']} ${empolyee[i]['Country']}',
-                      textAlign: TextAlign.center,
-                      style: const TextStyle(fontSize: 20, color: Colors.white),
-                    ),
-                  );
-                },
-              ),
-            ],
+          body: GridView.builder(
+            gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(crossAxisCount: 2),
+            itemCount: empolyee.length,
+            itemBuilder: (context, i) {
+              return Container(
+                height: 100,
+                color: i.isOdd ? Colors.redAccent : Colors.blueAccent,
+                child: Text(
+                  '${empolyee[i]['First name']} ${empolyee[i]['Middel name']} ${empolyee[i]['Last name']} ${empolyee[i]['Age']} ${empolyee[i]['Country']}',
+                  textAlign: TextAlign.center,
+                  style: const TextStyle(fontSize: 20, color: Colors.white),
+                ),
+              );
+            },
           ),
         ),
       ),
