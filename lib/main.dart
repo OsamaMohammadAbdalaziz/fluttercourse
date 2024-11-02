@@ -92,26 +92,56 @@ class MyApp extends StatelessWidget {
             ),
             backgroundColor: Colors.blue,
           ),
-          body: GridView.builder(
+          body: GridView(
             gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
-              crossAxisCount: 2,
+              crossAxisCount: 5,
               mainAxisSpacing: 10.0,
               childAspectRatio: 2.5,
               crossAxisSpacing: 10.5,
               mainAxisExtent: 200,
             ),
-            itemCount: empolyee.length,
-            itemBuilder: (context, i) {
-              return Container(
-                height: 100,
-                color: i.isOdd ? Colors.redAccent : Colors.blueAccent,
-                child: Text(
-                  '${empolyee[i]['First name']} ${empolyee[i]['Middel name']} ${empolyee[i]['Last name']} ${empolyee[i]['Age']} ${empolyee[i]['Country']}',
-                  textAlign: TextAlign.center,
-                  style: const TextStyle(fontSize: 20, color: Colors.white),
-                ),
-              );
-            },
+            children: const [
+              Text(
+                "ELmahdi",
+                style: TextStyle(fontSize: 15),
+              ),
+              Text(
+                "ELmahdi",
+                style: TextStyle(fontSize: 15),
+              ),
+              Text(
+                "ELmahdi",
+                style: TextStyle(fontSize: 15),
+              ),
+              Text(
+                "ELmahdi",
+                style: TextStyle(fontSize: 15),
+              ),
+              Text(
+                "ELmahdi",
+                style: TextStyle(fontSize: 15),
+              ),
+              Text(
+                "ELmahdi",
+                style: TextStyle(fontSize: 15),
+              ),
+              Text(
+                "ELmahdi",
+                style: TextStyle(fontSize: 15),
+              ),
+              Text(
+                "ELmahdi",
+                style: TextStyle(fontSize: 15),
+              ),
+              Text(
+                "ELmahdi",
+                style: TextStyle(fontSize: 15),
+              ),
+              Text(
+                "ELmahdi",
+                style: TextStyle(fontSize: 15),
+              ),
+            ],
           ),
         ),
       ),
