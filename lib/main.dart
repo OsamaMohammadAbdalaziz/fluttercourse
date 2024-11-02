@@ -103,43 +103,43 @@ class MyApp extends StatelessWidget {
             children: const [
               Text(
                 "ELmahdi",
-                style: TextStyle(fontSize: 15),
+                style: TextStyle(fontSize: 15, color: Colors.blue),
               ),
               Text(
                 "ELmahdi",
-                style: TextStyle(fontSize: 15),
+                style: TextStyle(fontSize: 15, color: Colors.red),
               ),
               Text(
                 "ELmahdi",
-                style: TextStyle(fontSize: 15),
+                style: TextStyle(fontSize: 15, color: Colors.pink),
               ),
               Text(
                 "ELmahdi",
-                style: TextStyle(fontSize: 15),
+                style: TextStyle(fontSize: 15, color: Colors.green),
               ),
               Text(
                 "ELmahdi",
-                style: TextStyle(fontSize: 15),
+                style: TextStyle(fontSize: 15, color: Colors.orange),
               ),
               Text(
                 "ELmahdi",
-                style: TextStyle(fontSize: 15),
+                style: TextStyle(fontSize: 15, color: Colors.purple),
               ),
               Text(
                 "ELmahdi",
-                style: TextStyle(fontSize: 15),
+                style: TextStyle(fontSize: 15, color: Colors.grey),
               ),
               Text(
                 "ELmahdi",
-                style: TextStyle(fontSize: 15),
+                style: TextStyle(fontSize: 15, color: Colors.black),
               ),
               Text(
                 "ELmahdi",
-                style: TextStyle(fontSize: 15),
+                style: TextStyle(fontSize: 15, color: Colors.yellow),
               ),
               Text(
                 "ELmahdi",
-                style: TextStyle(fontSize: 15),
+                style: TextStyle(fontSize: 15, color: Colors.indigo),
               ),
             ],
           ),
