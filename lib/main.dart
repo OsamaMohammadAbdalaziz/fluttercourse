@@ -94,9 +94,11 @@ class MyApp extends StatelessWidget {
           ),
           body: GridView.builder(
             gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
-                crossAxisCount: 2,
-                mainAxisSpacing: 10.0,
-                childAspectRatio: 2.5),
+              crossAxisCount: 2,
+              mainAxisSpacing: 10.0,
+              childAspectRatio: 2.5,
+              crossAxisSpacing: 10.5
+            ),
             itemCount: empolyee.length,
             itemBuilder: (context, i) {
               return Container(
