@@ -92,86 +92,86 @@ class MyApp extends StatelessWidget {
             ),
             backgroundColor: Colors.blue,
           ),
-          body: GridView(
-            gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
-              crossAxisCount: 5,
+          body: Container(
+            color: Colors.black12,
+            child: GridView.count(
+              crossAxisCount: 4,
               mainAxisSpacing: 10.0,
               childAspectRatio: 2.5,
               crossAxisSpacing: 10.5,
-              mainAxisExtent: 200,
+              children: const [
+                Text(
+                  "ELmahdi",
+                  style: TextStyle(
+                      fontSize: 15,
+                      color: Colors.blue,
+                      fontWeight: FontWeight.bold),
+                ),
+                Text(
+                  "ELmahdi",
+                  style: TextStyle(
+                      fontSize: 15,
+                      color: Colors.red,
+                      fontWeight: FontWeight.bold),
+                ),
+                Text(
+                  "ELmahdi",
+                  style: TextStyle(
+                      fontSize: 15,
+                      color: Colors.pink,
+                      fontWeight: FontWeight.bold),
+                ),
+                Text(
+                  "ELmahdi",
+                  style: TextStyle(
+                      fontSize: 15,
+                      color: Colors.green,
+                      fontWeight: FontWeight.bold),
+                ),
+                Text(
+                  "ELmahdi",
+                  style: TextStyle(
+                      fontSize: 15,
+                      color: Colors.orange,
+                      fontWeight: FontWeight.bold),
+                ),
+                Text(
+                  "ELmahdi",
+                  style: TextStyle(
+                      fontSize: 15,
+                      color: Colors.purple,
+                      fontWeight: FontWeight.bold),
+                ),
+                Text(
+                  "ELmahdi",
+                  style: TextStyle(
+                      fontSize: 15,
+                      color: Colors.grey,
+                      fontWeight: FontWeight.bold),
+                ),
+                Text(
+                  "ELmahdi",
+                  style: TextStyle(
+                      fontSize: 15,
+                      color: Colors.black,
+                      fontWeight: FontWeight.bold),
+                ),
+                Text(
+                  "ELmahdi",
+                  style: TextStyle(
+                      fontSize: 15,
+                      color: Colors.yellow,
+                      fontWeight: FontWeight.bold),
+                ),
+                Text(
+                  "ELmahdi",
+                  style: TextStyle(
+                      fontSize: 15,
+                      color: Colors.indigo,
+                      fontWeight: FontWeight.bold),
+                ),
+              ],
             ),
-            children: const [
-              Text(
-                "ELmahdi",
-                style: TextStyle(
-                    fontSize: 15,
-                    color: Colors.blue,
-                    fontWeight: FontWeight.bold),
-              ),
-              Text(
-                "ELmahdi",
-                style: TextStyle(
-                    fontSize: 15,
-                    color: Colors.red,
-                    fontWeight: FontWeight.bold),
-              ),
-              Text(
-                "ELmahdi",
-                style: TextStyle(
-                    fontSize: 15,
-                    color: Colors.pink,
-                    fontWeight: FontWeight.bold),
-              ),
-              Text(
-                "ELmahdi",
-                style: TextStyle(
-                    fontSize: 15,
-                    color: Colors.green,
-                    fontWeight: FontWeight.bold),
-              ),
-              Text(
-                "ELmahdi",
-                style: TextStyle(
-                    fontSize: 15,
-                    color: Colors.orange,
-                    fontWeight: FontWeight.bold),
-              ),
-              Text(
-                "ELmahdi",
-                style: TextStyle(
-                    fontSize: 15,
-                    color: Colors.purple,
-                    fontWeight: FontWeight.bold),
-              ),
-              Text(
-                "ELmahdi",
-                style: TextStyle(
-                    fontSize: 15,
-                    color: Colors.grey,
-                    fontWeight: FontWeight.bold),
-              ),
-              Text(
-                "ELmahdi",
-                style: TextStyle(
-                    fontSize: 15,
-                    color: Colors.black,
-                    fontWeight: FontWeight.bold),
-              ),
-              Text(
-                "ELmahdi",
-                style: TextStyle(
-                    fontSize: 15,
-                    color: Colors.yellow,
-                    fontWeight: FontWeight.bold),
-              ),
-              Text(
-                "ELmahdi",
-                style: TextStyle(
-                    fontSize: 15,
-                    color: Colors.indigo,
-                    fontWeight: FontWeight.bold),
-              ),
-            ],
           ),
         ),
       ),
