@@ -25,7 +25,14 @@ class MyApp extends StatelessWidget {
                 Card(
                   child: Container(
                     padding: EdgeInsets.all(20),
-                    child: Text("OsamaElmahdi"),
+                    child: ListTile(
+                      onTap: () {
+                        print("On Tap");
+                      },
+                      title: Text("Title"),
+                      subtitle: Text("Subtitle"),
+                      trailing: Text("Trailing"),
+                    ),
                   ),
                 )
               ],
