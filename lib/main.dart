@@ -14,19 +14,33 @@ class MyApp extends StatelessWidget {
         child: Scaffold(
           appBar: AppBar(
             title: const Text(
-              "Icon & Icon button",
+              "Responsive & Expanded",
               style: TextStyle(color: Colors.white),
             ),
             backgroundColor: Colors.blue,
           ),
           body: Container(
-            child: IconButton(
-              onPressed: () {
-                print("on Pressed");
-              },
-              iconSize: 150,
-              color: Colors.blue,
-              icon: Icon(Icons.wifi),
+            child: Row(
+              children: [
+                Expanded(
+                  child: Container(
+                    color: Colors.red,
+                    height: 100,
+                  ),
+                ),
+                Expanded(
+                  child: Container(
+                    color: Colors.yellow,
+                    height: 100,
+                  ),
+                ),
+                Expanded(
+                  child: Container(
+                    color: Colors.green,
+                    height: 100,
+                  ),
+                ),
+              ],
             ),
           ),
         ),
