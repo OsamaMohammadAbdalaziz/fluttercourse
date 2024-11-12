@@ -24,11 +24,8 @@ class MyApp extends StatelessWidget {
               onPressed: () {
                 print("on Pressed");
               },
-              icon: Icon(
-                Icons.wifi,
-                color: Colors.black,
-                size: 150,
-              ),
+              iconSize: 150,
+              icon: Icon(Icons.wifi),
             ),
           ),
         ),
