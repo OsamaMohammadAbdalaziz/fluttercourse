@@ -189,6 +189,11 @@ class TextSection extends StatelessWidget {
         child: Text(
           description,
           softWrap: true,
+          style: const TextStyle(
+            fontSize: 16,
+            fontStyle: FontStyle.italic,
+            fontWeight: FontWeight.bold,
+          ),
         ),
       ),
     );
