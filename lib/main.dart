@@ -88,6 +88,7 @@ class TitleSection extends StatelessWidget {
                     location,
                     style: TextStyle(
                       color: Colors.grey[500],
+                      fontWeight: FontWeight.bold,
                     ),
                   ),
                 ],
@@ -97,7 +98,10 @@ class TitleSection extends StatelessWidget {
               Icons.star,
               color: Colors.red[500],
             ),
-            const Text('41'),
+            const Text(
+              '41',
+              style: TextStyle(fontWeight: FontWeight.bold),
+            ),
           ],
         ),
       ),
