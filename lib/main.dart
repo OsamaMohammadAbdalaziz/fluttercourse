@@ -9,267 +9,147 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    const String appTitle = "Flutter layout demo";
     return MaterialApp(
-      title: appTitle,
       home: SafeArea(
         child: Scaffold(
           appBar: AppBar(
-            title: const Align(
-              alignment: Alignment.center,
-              child: Text(
-                appTitle,
-                style: TextStyle(
-                    fontStyle: FontStyle.normal, fontWeight: FontWeight.bold),
-              ),
+            title: const Text(
+              "Example",
+              style: TextStyle(color: Colors.white),
             ),
+            backgroundColor: Colors.blue,
           ),
-          body: const SingleChildScrollView(
+          body: Container(
+            padding: const EdgeInsets.all(10),
             child: Column(
               children: [
-                ImageSection(
-                  image: 'asset/Images/campground.jpg',
+                Container(
+                  decoration: BoxDecoration(
+                      color: const Color(0xffe6f0fa),
+                      border: Border.all(color: Colors.black, width: 1)),
+                  padding: const EdgeInsets.all(10),
+                  width: 1000,
+                  child: Text(
+                    "Osama Elmahdi",
+                    textAlign: TextAlign.center,
+                    style: TextStyle(
+                        fontWeight: FontWeight.w600,
+                        fontSize: 20,
+                        color: Colors.grey[700]),
+                  ),
                 ),
-                TitleSection(
-                  name: 'Oeschinen Lake Campground on night',
-                  location: 'Kandersteg, Switzerland',
+                Container(
+                  decoration: BoxDecoration(
+                      color: const Color(0xffe6f0fa),
+                      border: Border.all(color: Colors.black, width: 1)),
+                  padding: const EdgeInsets.all(10),
+                  margin: const EdgeInsets.only(top: 10),
+                  width: 1000,
+                  child: Text(
+                    "One of the most common layout patterns is to arrange widgets vertically or horizontally. You can use a Row widget to arrange widgets horizontally and a Column widget to arrange widgets vertically.",
+                    style: TextStyle(
+                        fontSize: 20,
+                        color: Colors.grey[700],
+                        fontWeight: FontWeight.bold),
+                  ),
                 ),
-                ButtonSection(),
-                TextSection(
-                  description:
-                      'Lake Oeschinen lies at the foot of the Blüemlisalp in the '
-                      'Bernese Alps. Situated 1,578 meters above sea level, it '
-                      'is one of the larger Alpine Lakes. A gondola ride from '
-                      'Kandersteg, followed by a half-hour walk through pastures '
-                      'and pine forest, leads you to the lake, which warms to 20 '
-                      'degrees Celsius in the summer. Activities enjoyed here '
-                      'include rowing, and riding the summer toboggan run.',
+                Container(
+                  decoration: BoxDecoration(
+                      color: const Color(0xffe6f0fa),
+                      border: Border.all(color: Colors.black, width: 1)),
+                  padding: const EdgeInsets.symmetric(vertical: 10),
+                  margin: const EdgeInsets.only(top: 10),
+                  width: 1000,
+                  child: const Row(
+                    mainAxisAlignment: MainAxisAlignment.spaceAround,
+                    children: [
+                      Row(
+                        children: [
+                          Icon(Icons.star, size: 20),
+                          Icon(Icons.star, size: 20),
+                          Icon(Icons.star, size: 20),
+                          Icon(Icons.star, size: 20),
+                          SizedBox(
+                            width: 150,
+                          ), // Add space between the icons and the text
+                          Text(
+                            "170 Reviews",
+                            style: TextStyle(fontWeight: FontWeight.bold),
+                          )
+                        ],
+                      ),
+                    ],
+                  ),
                 ),
+                Container(
+                  decoration: BoxDecoration(
+                      color: const Color(0xffe6f0fa),
+                      border: Border.all(color: Colors.black, width: 1)),
+                  padding: const EdgeInsets.all(10),
+                  margin: const EdgeInsets.only(top: 11),
+                  width: 1000,
+                  child: Row(
+                    mainAxisAlignment: MainAxisAlignment.spaceAround,
+                    children: [
+                      const Spacer(),
+                      Column(
+                        children: [
+                          Icon(Icons.person, color: Colors.green[400]),
+                          const Text(
+                            "Prep",
+                            style: TextStyle(fontSize: 18),
+                          ),
+                          Container(
+                            height: 8,
+                          ),
+                          const Text(
+                            "25 min",
+                            style: TextStyle(fontSize: 18),
+                          ),
+                        ],
+                      ),
+                      const Spacer(),
+                      Column(
+                        children: [
+                          Icon(Icons.alarm, color: Colors.green[400]),
+                          const Text(
+                            "Cook",
+                            style: TextStyle(fontSize: 18),
+                          ),
+                          Container(
+                            height: 8,
+                          ),
+                          const Text(
+                            "1 hr",
+                            style: TextStyle(fontSize: 18),
+                          ),
+                        ],
+                      ),
+                      const Spacer(),
+                      Column(
+                        children: [
+                          Icon(Icons.restaurant, color: Colors.green[400]),
+                          const Text(
+                            "Feed",
+                            style: TextStyle(fontSize: 18),
+                          ),
+                          Container(
+                            height: 8,
+                          ),
+                          const Text(
+                            "4-6",
+                            style: TextStyle(fontSize: 18),
+                          ),
+                        ],
+                      ),
+                      const Spacer(),
+                    ],
+                  ),
+                )
               ],
             ),
           ),
         ),
-      ),
-    );
-  }
-}
-
-class TitleSection extends StatelessWidget {
-  const TitleSection({
-    super.key,
-    required this.name,
-    required this.location,
-  });
-
-  final String name;
-  final String location;
-
-  @override
-  Widget build(BuildContext context) {
-    return SafeArea(
-      child: Padding(
-        padding: const EdgeInsets.all(32),
-        child: Row(
-          children: [
-            Expanded(
-              child: Column(
-                crossAxisAlignment: CrossAxisAlignment.start,
-                children: [
-                  Padding(
-                    padding: const EdgeInsets.only(bottom: 8),
-                    child: Text(
-                      name,
-                      style: const TextStyle(
-                        fontWeight: FontWeight.bold,
-                      ),
-                    ),
-                  ),
-                  Text(
-                    location,
-                    style: TextStyle(
-                      color: Colors.grey[500],
-                      fontWeight: FontWeight.bold,
-                    ),
-                  ),
-                ],
-              ),
-            ),
-            Icon(
-              Icons.star,
-              color: Colors.red[500],
-            ),
-            const Text(
-              '41',
-              style: TextStyle(fontWeight: FontWeight.bold),
-            ),
-          ],
-        ),
-      ),
-    );
-  }
-}
-
-class ButtonSection extends StatelessWidget {
-  const ButtonSection({super.key});
-
-  @override
-  Widget build(BuildContext context) {
-    final Color color = Theme.of(context).primaryColor;
-    return SafeArea(
-      child: SizedBox(
-        child: Row(
-          mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-          children: [
-            ButtonWithText(
-              color: color,
-              icon: Icons.call,
-              label: 'CALL',
-            ),
-            ButtonWithText(
-              color: color,
-              icon: Icons.near_me,
-              label: 'ROUTE',
-            ),
-            ButtonWithText(
-              color: color,
-              icon: Icons.share,
-              label: 'SHARE',
-            ),
-          ],
-        ),
-      ),
-    );
-  }
-}
-
-class ButtonWithText extends StatelessWidget {
-  const ButtonWithText({
-    super.key,
-    required this.color,
-    required this.icon,
-    required this.label,
-  });
-
-  final Color color;
-  final IconData icon;
-  final String label;
-
-  @override
-  Widget build(BuildContext context) {
-    return Column(
-      mainAxisSize: MainAxisSize.min,
-      mainAxisAlignment: MainAxisAlignment.center,
-      children: [
-        Icon(icon, color: color),
-        Padding(
-          padding: const EdgeInsets.only(top: 8),
-          child: Text(
-            label,
-            style: TextStyle(
-              fontSize: 12,
-              fontWeight: FontWeight.w400,
-              color: color,
-            ),
-          ),
-        ),
-      ],
-    );
-  }
-}
-
-class TextSection extends StatelessWidget {
-  const TextSection({
-    super.key,
-    required this.description,
-  });
-
-  final String description;
-
-  @override
-  Widget build(BuildContext context) {
-    return SafeArea(
-      child: Padding(
-        padding: const EdgeInsets.all(32),
-        child: Text(
-          description,
-          softWrap: true,
-          style: const TextStyle(
-            fontSize: 16,
-            fontStyle: FontStyle.italic,
-            fontWeight: FontWeight.bold,
-          ),
-        ),
-      ),
-    );
-  }
-}
-
-class ImageSection extends StatelessWidget {
-  const ImageSection({super.key, required this.image});
-
-  final String image;
-
-  @override
-  Widget build(BuildContext context) {
-    return SafeArea(
-      child: Image.asset(
-        image,
-        width: 600,
-        height: 240,
-        fit: BoxFit.cover,
-      ),
-    );
-  }
-}
-
-class FavoriteWidget extends StatefulWidget {
-  const FavoriteWidget({super.key});
-
-  @override
-  State<FavoriteWidget> createState() => _FavoriteWidgetState();
-}
-
-class _FavoriteWidgetState extends State<FavoriteWidget> {
-  bool _isFavorited = true;
-  int _favoriteCount = 41;
-
-  void _toggleFavorite() {
-    setState(() {
-      if (_isFavorited) {
-        _favoriteCount -= 1;
-        _isFavorited = false;
-      } else {
-        _favoriteCount += 1;
-        _isFavorited = true;
-      }
-    });
-  }
-
-  @override
-  Widget build(BuildContext context) {
-    return SafeArea(
-      child: Row(
-        mainAxisSize: MainAxisSize.min,
-        children: [
-          Container(
-            padding: const EdgeInsets.all(0),
-            child: IconButton(
-              padding: const EdgeInsets.all(0),
-              alignment: Alignment.center,
-              icon: (_isFavorited
-                  ? const Icon(Icons.star)
-                  : const Icon(Icons.star_border)),
-              color: Colors.red[500],
-              onPressed: _toggleFavorite,
-            ),
-          ),
-          SizedBox(
-            width: 18,
-            child: SizedBox(
-              child: Text('$_favoriteCount'),
-            ),
-          ),
-        ],
       ),
     );
   }
