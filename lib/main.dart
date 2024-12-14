@@ -20,7 +20,7 @@ class MyApp extends StatelessWidget {
             backgroundColor: Colors.blue,
           ),
           body: Container(
-            padding: EdgeInsets.all(10),
+            padding: const EdgeInsets.all(10),
             child: Column(
               children: [
                 MaterialButton(
@@ -34,7 +34,7 @@ class MyApp extends StatelessWidget {
                   onPressed: () {
                     print("Osama Elmahdi");
                   },
-                  child: Text("Osama Elmahdi"),
+                  child: const Text("Osama Elmahdi"),
                 )
               ],
             ),
